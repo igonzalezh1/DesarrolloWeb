@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil de Estudiante</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="eyebrow">Mi perfil de estudiante</span>
+    <h1>Israel Alexander González Hernández</h1>
+    <p class="role">Estudiante</p>
+    <div class="avatar-row">
+      <div class="avatar">TN</div>
+      <div class="contact">
+        <span>igonzalezh1@miumg.edu.gt</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="perfil">
+    <div class="section-head">
+      <span class="tag">01</span>
+      <h2>Mi perfil como estudiante</h2>
+    </div>
+    <div class="card">
+      <p>
+        Soy un estudiante de octavo ciclo de ingeniería en sisetemas de información en la Universidad Mariano Gálvez de Guatemala en la sede de Escuintla para plan de fin de semana, especificamente días sábado. Procuro esforzarme para lograr notas altas y aprender todo lo que pueda sobre la carrera para ponerlo en práctica lo antes posible en mi vida profesional.
+      </p>
+    </div>
+  </section>
+
+  <section id="aspiraciones">
+    <div class="section-head">
+      <span class="tag">02</span>
+      <h2>Aspiraciones e intereses</h2>
+    </div>
+    <div class="card">
+      <ul>
+        <li>Lograr convertirme en un ingeniero en sistemas hecho y derecho con muchos conocimientos sobre el área.</li>
+        <li>Implicarme y trabajar en áreas complejas con proyectos grandes que ponga a prueba mis habilidades y por sobre todo para seguir aprendiendo.</li>
+        <li>Interes particular en la programación de aplicaciones que automaticen las tareas complejas de las empresas que manipulan procesos tediosos..</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="tecnologia">
+    <div class="section-head">
+      <span class="tag">03</span>
+      <h2>Áreas de interés en tecnología</h2>
+    </div>
+    <div class="card">
+      <div class="stack">
+        <span class="chip">DesarrolloWeb</span>
+        <span class="chip">BasesDeDatos</span>
+        <span class="chip">CiberSeguridad</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>hecho con HTML &amp; CSS</span>
+    <span id="year"></span>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

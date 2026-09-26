@@ -24,13 +24,12 @@ export class Dashboard implements OnInit {
 
     this.postsService.getPosts().subscribe({
       next: (data) => {
-        // Mostramos solo los primeros 10 para no saturar la tabla
         this.posts = data.slice(0, 10);
         this.loading = false;
       },
       error: (err) => {
         console.error('Error al consumir el endpoint:', err);
-        this.error = 'No se pudieron cargar los posts.';
+        this.error = 'No cargo.';
         this.loading = false;
       },
     });

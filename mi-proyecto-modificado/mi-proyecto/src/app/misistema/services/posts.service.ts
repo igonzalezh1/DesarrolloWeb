@@ -17,27 +17,21 @@ export class PostsService {
 
   constructor(private http: HttpClient) {}
 
-  // GET - obtener todos los posts
   getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(this.apiUrl);
   }
 
-  // GET - obtener un post por id
   getPost(id: number): Observable<Post> {
     return this.http.get<Post>(`${this.apiUrl}/${id}`);
   }
 
-  // POST - crear un post
   createPost(post: Partial<Post>): Observable<Post> {
     return this.http.post<Post>(this.apiUrl, post);
   }
 
-  // PUT - actualizar un post
   updatePost(id: number, post: Partial<Post>): Observable<Post> {
     return this.http.put<Post>(`${this.apiUrl}/${id}`, post);
   }
-
-  // DELETE - eliminar un post
   deletePost(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }

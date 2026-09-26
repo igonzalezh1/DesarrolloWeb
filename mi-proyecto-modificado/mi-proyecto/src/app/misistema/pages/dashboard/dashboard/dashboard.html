@@ -109,10 +109,10 @@
         </div>
 
         <div class="ml-64 w-full p-8">
-            <h2 class="text-2xl font-bold text-slate-800 mb-1">Posts (JSONPlaceholder)</h2>
-            <p class="text-slate-500 mb-6">Datos consumidos vía HttpClient desde https://jsonplaceholder.typicode.com/posts</p>
+            <h2 class="text-2xl font-bold text-slate-800 mb-1">JSONPlaceholder</h2>
+            <p class="text-slate-500 mb-6">HttpClient con https://jsonplaceholder.typicode.com/posts</p>
 
-            <div *ngIf="loading" class="text-slate-500">Cargando posts...</div>
+            <div *ngIf="loading" class="text-slate-500">Cargando</div>
             <div *ngIf="error" class="text-red-600">{{ error }}</div>
 
             <div *ngIf="!loading && !error" class="bg-white rounded-lg shadow overflow-hidden">
